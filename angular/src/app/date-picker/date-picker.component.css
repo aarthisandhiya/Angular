@@ -1,0 +1,80 @@
+
+.dateInput{
+    border: none;
+    outline: none;
+    width: 300px;
+    box-sizing: border-box;
+    left:1rem;
+}
+.dateInput .grid-text{
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 4;
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(9, 8, 8);
+    background-color:rgb(71, 87, 87);
+    border-radius: 5px;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.grid-text input{   
+    padding: 1rem 2rem 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.grid-text label{
+    position: absolute;
+    top:0.5rem;
+    left: 1rem;
+}
+.dateInput div input:focus{
+    border-bottom: 2px solid red;
+}
+.dateInput div input::placeholder{
+    left:0.5rem;
+}
+
+.dateInput div input:focus+label{
+    color: red;
+    top: 0.5rem;
+    left: 1rem;
+}
+.grid{
+    width: 100%;
+    background-color:rgb(71, 87, 87);
+    display: grid;
+    border-radius: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-item ,.grid-item select{ 
+    cursor: pointer;
+    background-color: rgb(236, 195, 145);
+    padding: 0.2rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.calenderDateGrid{
+    max-width: 300px;
+    width: 100%;
+    grid-column: span 4;
+    padding: 0.2rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap:1px;
+    box-sizing: border-box;  
+    cursor: pointer;
+}
+.calender-item{
+    font-size: 8px;
+    padding: 1rem;
+    background-color: burlywood;
+    border-radius: 5px;
+    word-break: break-word;
+}

@@ -1,0 +1,9 @@
+<h1 style="text-align: center;">Input Box</h1>
+<div class="input-wrapper">
+    <input type="email" [(ngModel)]="email" required [ngClass]="{'has-value': email}">
+    <label for="email">Email*</label>
+    <!-- If email has any non-empty value (truthy), then:
+        The class has-value is added to the <input> element.
+        If email is an empty string or null (falsy), then:
+        The class has-value is not added. -->
+</div>

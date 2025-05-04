@@ -1,0 +1,35 @@
+.input-wrapper {
+    position: relative;
+}
+
+input {
+    padding: 1.5rem 2rem 0.5rem 1rem;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: aliceblue;
+    border-bottom: 2px solid grey;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-bottom: 2px solid red;
+}
+
+label {
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    transition: 0.3s;
+    color: grey;
+}
+
+input:focus+label,
+input.has-value+label {
+    top: 0.5rem;
+    font-size: 12px;
+    color: red;
+}
+input:valid+label{
+    color: grey;
+}

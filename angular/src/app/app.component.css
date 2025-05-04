@@ -1,0 +1,17 @@
+*{
+    background-color: bisque;
+}
+.nav-box{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+    background-color:aqua;
+}
+.anchor{
+    text-decoration: none;
+    background-color:pink;
+    margin: 10px;
+    display: block; 
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}

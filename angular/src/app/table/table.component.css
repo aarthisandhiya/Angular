@@ -1,0 +1,24 @@
+.table1{
+    border-collapse: collapse;
+}
+.table1 th, .table1 tr, .table1 td{
+    border-bottom: 2px solid pink;
+    padding: 10px;
+}
+.table2{
+    border-collapse: collapse;
+}
+.table2>th, .table2 tr, .table2 td{
+    border-bottom: 2px solid pink;
+    padding: 10px;
+}
+.first-col{
+    border-right: 2px solid pink;
+}
+.table3{
+    border-collapse: collapse;
+}
+.table3 th{
+    border-bottom: 2px solid pink;
+    padding: 10px;
+}

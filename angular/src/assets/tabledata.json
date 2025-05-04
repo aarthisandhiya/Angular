@@ -1,0 +1,26 @@
+{
+    "headers": ["Name", "Age", "Department"],
+    "tableData": [
+      { "values": ["Alice", "28", "Engineering"] },
+      { "values": ["Bob", "34", "Marketing"] },
+      { "values": ["Charlie", "25", "HR"] },
+      { "values": ["David", "30", "Sales"] },
+      { "values": ["Ella", "27", "Finance"] },
+      { "values": ["Frank", "32", "IT"] },
+      { "values": ["Grace", "29", "Operations"] },
+      { "values": ["Henry", "31", "Support"] },
+      { "values": ["Isla", "26", "Logistics"] },
+      { "values": ["Jack", "35", "Legal"] },
+      { "values": ["Karen", "33", "Admin"] },
+      { "values": ["Leo", "24", "Engineering"] },
+      { "values": ["Mona", "38", "Marketing"] },
+      { "values": ["Nate", "37", "Sales"] },
+      { "values": ["Olivia", "36", "Finance"] },
+      { "values": ["Paul", "39", "IT"] },
+      { "values": ["Quinn", "40", "HR"] },
+      { "values": ["Rose", "41", "Admin"] },
+      { "values": ["Steve", "42", "Legal"] },
+      { "values": ["Tina", "43", "Support"] }
+    ]
+  }
+  

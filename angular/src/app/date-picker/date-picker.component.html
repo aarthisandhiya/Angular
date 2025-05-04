@@ -1,0 +1,36 @@
+<h1 style="text-align: center;">Date Picker</h1>
+<div class="dateInput">
+    <div class="grid-text">
+        <input type="text"(click)="toggleCalender()" placeholder="DD/MM/YYYY" [(ngModel)]="date" />
+        <label for="date">Choose a date*</label>
+    </div>
+    @if(showCalender){
+        <div class="grid">
+            <div class="grid-item" (click)="yearchange('less')">&lt;</div>
+            <div class="grid-item">
+                <select [(ngModel)]="monthSelected" (change)="onSelected($event,'month')">
+                    @for(month of monthInput;track month){
+                    <option>{{month}}</option>
+                    }
+                </select>
+            </div>
+            <div class="grid-item">
+                <select [(ngModel)]="yearSelected" (change)="onSelected($event,'year')">
+                    @for(year of yearInput;track year){
+                    <option [value]="year">{{year}}</option>
+                    }
+                </select>
+            </div>
+            <div class="grid-item" (click)="yearchange('greater')">&gt;</div>
+            <div class="calenderDateGrid">
+                @for(date of dateInput;track date){
+                    <div class="calender-item" (click)="onDateSelected(date)">{{date}}</div>
+                }
+            </div>
+        </div>
+    }
+    @if(invalidDate){
+        <div style="color: red;">Enter valid date</div>
+    }
+</div>
+<button  style="background-color: greenyellow;border: none;padding: 10px;font-size: 16px;" (click)="validation()">Validate</button>
