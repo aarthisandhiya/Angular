@@ -1,4 +1,5 @@
 <h1 style="text-align: center;">Table</h1>
+<div class="table-container">
 <div>
     <table class="table1">
         <thead>
@@ -13,7 +14,6 @@
         </tbody>
     </table>
 </div>
-<hr>
 <div>
     <table class="table2">
         <thead>
@@ -28,7 +28,6 @@
         </tbody>
     </table>
 </div>
-<hr>
 <div>
     <table class="table3">
         <thead>
@@ -42,4 +41,58 @@
             </tr>
         </tbody>
     </table>
+</div>
+<div class="table4card">
+    <table class="table4">
+        <thead>
+            <tr>
+                <th *ngFor="let header of tableData.headers">{{ header }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of table4paginationData[currentPageIndex]">
+                <td *ngFor="let cell of row.values">{{ cell }}</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <h4>Items Per Page</h4>
+                </td>
+                <td>
+                    <select [(ngModel)]="selectedRowCount" (change)="onRowCountChange()">
+                        <option *ngFor="let i of [5,10,15]">
+                            {{i}}
+                        </option>
+                    </select>
+                </td>
+                <td>
+                    <button>&#124;&lt;</button>
+                    <button>&lt;</button>
+                    <button>&gt;</button>
+                    <button>&gt;&#124;</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<div>
+    <table class="table5">
+        <thead>
+            <tr>
+                <th class="sortable-header" *ngFor="let header of tableData.headers" (click)="sortBy(header)" (mouseenter)="hoveredHeader=header" (mouseleave)="hoveredHeader=''">
+                    {{ header }}
+                    <span class="sort-arrow" *ngIf="hoveredHeader === header">
+                        {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                    </span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of tableData.tableData">
+                <td *ngFor="let value of data.values;let i=index">{{ value }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>

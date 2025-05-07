@@ -11,5 +11,8 @@ export const routes:Routes=[
     },
     {
         path:'table', loadComponent:()=>import('./table/table.component').then(m=>m.TableComponent)
+    },
+    {
+        path:'sheet', loadComponent:()=>import('./sheet/sheet.component').then(m=>m.SheetComponent)
     }
 ];

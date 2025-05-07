@@ -1,3 +1,9 @@
+.table-container{
+    display: flex;
+    column-gap: 10rem;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
 .table1{
     border-collapse: collapse;
 }
@@ -17,8 +23,62 @@
 }
 .table3{
     border-collapse: collapse;
+    padding: 10px;
 }
 .table3 th{
     border-bottom: 2px solid pink;
+}
+.table3 th, .table3 td{
     padding: 10px;
+}
+.table3 tr:hover{
+   border-top: 2px solid pink;
+   border-bottom: 2px solid pink;
+}
+.table4{
+    border-collapse: collapse;
+}
+.table4 th, .table4 tr, .table4 td{
+    border-bottom: 2px solid pink;
+    padding: 10px;
+}
+.table4card{
+    border: 2px solid grey;
+    display: inline-block;
+    padding: 50px;
+/* 
+block	Full-width container
+inline	No width/height/padding control
+inline-block	Content-width container with box control */
+}
+.table4 tfoot button{
+    border: none;
+    padding: 2px;
+    margin: 0 7px;
+    background-color: white;
+}
+.table5{
+    border-collapse: collapse;
+}
+.table5 th{
+    border-bottom: 2px solid pink;
+}
+.table5 th, .table5 td{
+    padding: 10px;
+}
+.table5 tr:hover{
+   border-top: 2px solid pink;
+   border-bottom: 2px solid pink;
+}
+.sortable-header{
+    position: relative;
+    cursor:pointer;
+    padding-right: 1rem;
+}
+.sort-arrow{
+    position: absolute;
+    opacity: 1;
+}
+.sortable-header:not(:hover).sort-arrow{
+    opacity: 0;
 }
