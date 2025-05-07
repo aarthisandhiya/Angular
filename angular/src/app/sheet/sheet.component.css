@@ -1,0 +1,103 @@
+.flex-container{
+    display: flex;
+}
+
+.card1{
+    background-color: rgb(240, 219, 219);
+    border-radius: 20px;
+    display: block;
+    padding: 1rem;
+    width: fit-content; 
+    animation: slideup 0.5s ease-out;
+}
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+.card2{
+    background-color: rgb(240, 219, 219);
+    border-radius: 20px;
+    display: block;
+    padding: 1rem;
+    width: fit-content; 
+    animation: slidedown 0.5s ease-out;
+}
+@keyframes slidedown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+.card3{
+    background-color: rgb(240, 219, 219);
+    border-radius: 20px;
+    display: block;
+    padding: 1rem;
+    width: fit-content; 
+    animation: slideright 0.5s ease-out;
+}
+@keyframes slideright {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+.card4{
+    background-color: rgb(240, 219, 219);
+    border-radius: 20px;
+    display: block;
+    padding: 1rem;
+    width: fit-content; 
+    animation: slideleft 0.5s ease-out;
+}
+@keyframes slideleft {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}
+.innerCard{
+    background-color: rgb(250, 239, 239);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+}
+.innerCard:hover{
+    background-color: rgb(218, 167, 167);
+    border-radius: 20px;
+}
+button{
+    background-color: rgb(143, 151, 151);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    padding: 2rem;
+    margin: 1rem;
+}
+button:hover{
+    background-color: bisque;
+}

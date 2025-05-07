@@ -1,1 +1,39 @@
-<p>sheet works!</p>
+<h1 style="text-align: center;">Sheet</h1>
+<div class="flex-container">
+    <div>
+        <button (click)="buttonClicked('bottomup')">Bottom Up sheet</button>
+        <div class="card1" *ngIf="bottomup">
+            <div class="innerCard" *ngFor="let data of sheet">
+                <div>{{data.title}}</div>
+                <div>{{data.text}}</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button (click)="buttonClicked('topdown')">Bottom Up sheet</button>
+        <div class="card2" *ngIf="topdown">
+            <div class="innerCard" *ngFor="let data of sheet">
+                <div>{{data.title}}</div>
+                <div>{{data.text}}</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button (click)="buttonClicked('leftright')">Bottom Up sheet</button>
+        <div class="card3" *ngIf="leftright">
+            <div class="innerCard" *ngFor="let data of sheet">
+                <div>{{data.title}}</div>
+                <div>{{data.text}}</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button (click)="buttonClicked('rightleft')">Bottom Up sheet</button>
+        <div class="card4" *ngIf="rightleft">
+            <div class="innerCard" *ngFor="let data of sheet">
+                <div>{{data.title}}</div>
+                <div>{{data.text}}</div>
+            </div>
+        </div>
+    </div>
+</div>
